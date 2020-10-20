@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.mystyle {
+  width: 300px;
+  height: 50px;
+  text-align: center;
+  background-color: coral;
+  color: white;
+  margin-bottom: 10px;
+}
+.mystyle2 {
+  width: 300px;
+  height: 100px;
+  text-align: center;
+  background-color: rgb(80, 255, 168);
+  color: white;
+  margin-bottom: 10px;
+}
+</style>
+</head>
+<body>
+
+<p>exemplo de propriedades className, id e style.</p>
+
+<div id="myDIV" class="mystyle">
+elemento div
+</div>
+
+<button onclick="myFunction()">Try it</button>
+
+<script>
+function myFunction() {
+  var x = document.getElementsByTagName("DIV")[0];
+  
+  if (x.id === "myDIV") { 
+    x.style.fontSize = "30px";
+    x.className = 'mystyle2'
+    x.textContent = x.className
+  }
+}
+</script>
+
+</body>
+</html>
