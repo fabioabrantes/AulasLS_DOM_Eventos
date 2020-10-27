@@ -2,7 +2,7 @@ const txtEmail = document.getElementById("txtEmail")
 const msgFeedback = document.getElementById("newsletterFeedback")
 
 function emailValid(email){
-    // código de valiacao no futuro
+    // código de validacao no futuro
     
     return true
 }

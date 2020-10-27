@@ -17,6 +17,8 @@ const divs = document.querySelectorAll("div");
 
 for (let i = 0; i < divs.length; i++) {
   divs[i].onclick = function (e) {
-    e.target.style.backgroundColor = bgChange();
+    e.currentTarget.style.backgroundColor = bgChange();
+    console.log(e.target)
+    console.log(e.currentTarget)
   };
 }

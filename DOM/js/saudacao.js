@@ -13,6 +13,7 @@ let saudacao1 =  () => {
 }
 //saudacao1()
 
+
 // adicionando tags html
 let saudacao2 = function () {
   const nomeUsuario = "fabio"
@@ -67,3 +68,17 @@ let saudacao2 = function () {
 
 }
 //saudacao5()
+
+const elementDiv = document.createElement("div")
+elementDiv.className = "top-bar"
+        //topBarElemento.textContent = nomeUsuario
+elementDiv.innerHTML = `<p> Olá, <b> fabio </b></p>`
+const elementoPai = document.querySelector(".hero-content")
+
+elementoPai.insertBefore(elementDiv, elementoPai.lastElementChild)
+
+const filhos = elementoPai.children;
+console.log(filhos);
+for(let i = 0 ; i<filhos.length;i++){
+  console.log(filhos[i].nodeName);
+}

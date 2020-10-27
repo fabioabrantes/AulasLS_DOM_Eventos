@@ -19,7 +19,7 @@
 
     <form action="#">
         <input type="text" id="txtNome" placeholder="nome"><br><br>
-        <input type="text" id="txtEmail" placeholder="email" maxlength="10" class="input input.email"><br><br>
+        <input type="text" id="txtEmail" placeholder="email" class="input input.email"><br><br>
 
         <input type="checkbox" id="contrato">
         <label for="contrato">Li e aceito o contrato</label><br><br>
@@ -28,20 +28,8 @@
         </textarea>
     </form>
 
-    <script>
-        const txtNome = document.querySelector("#txtNome")
-        const txtEmail = document.querySelector("#txtEmail")
-        const labelContrato = document.querySelector("label[for='contrato']")
-        txtNome.value = "Daniel"
-        txtNome.disabled = true
-        console.log(txtNome.value)
-        console.log(labelContrato.htmlFor)
-        console.log(txtEmail.maxLength)
-        console.log(txtEmail.className)
-
-        txtEmail.readOnly = true
-
-
+    <script src="./js/exemploProps.js">
+        
     </script>
 
 </body>
